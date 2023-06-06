@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Website Form</title>
+    <style>
+        body {
+            text-align: center;
+        }
+        #redScreen {
+            display: none;
+            width: 100%;
+            height: 100vh;
+            background-color: red;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 9999;
+        }
+    </style>
+</head>
+<body>
+    <div id="redScreen"></div>
+    <h1>Who are you?</h1>
+    <form id="myForm">
+        <select name="user" id="user" required>
+            <option value="">Select an option</option>
+            <option value="Rehan">Rehan</option>
+            <option value="Noah">Noah</option>
+            <option value="Nishant">Nishant</option>
+            <option value="Andrew">Andrew</option>
+        </select>
+        <br><br>
+        <input type="submit" value="Submit">
+    </form>
+
+    <script src="script.js"></script>
+</body>
+</html>
